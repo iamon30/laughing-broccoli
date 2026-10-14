@@ -1,0 +1,143 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Machine Shop Module IX–X</title><style>
+:root{--bg:#f6efdc;--card:#fffaf0;--ink:#2b2a26;--mut:#6b6455;--acc:#b4531f;--line:#d9ccab;--ok:#2e7d32;--bad:#b3261e;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#f6efdc;--card:#fffaf0;--ink:#2b2a26}}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Georgia,"Times New Roman",serif;background-image:repeating-linear-gradient(0deg,transparent 0 31px,rgba(150,120,70,.08) 31px 32px),repeating-linear-gradient(90deg,transparent 0 31px,rgba(150,120,70,.08) 31px 32px)}
+header{background:#3a3226;color:#f6efdc;padding:16px;border-bottom:6px solid var(--acc)}header h1{margin:0;font-size:1.3rem}header p{margin:2px 0 0;color:#d9ccab;font-size:.85rem}
+nav{display:flex;gap:6px;flex-wrap:wrap;padding:10px 12px;background:#eadfc2;border-bottom:1px solid var(--line)}
+nav button{font:inherit;padding:8px 12px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:6px;cursor:pointer}nav button.on{background:var(--acc);color:#fff;border-color:var(--acc)}
+main{max-width:860px;margin:0 auto;padding:16px}.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;margin-bottom:14px}
+h2{color:var(--acc);margin:.2em 0 .4em}h3{margin:.8em 0 .2em}.pane{display:none}.pane.on{display:block}
+.tip{border-left:4px solid var(--acc);background:#f3e6c8;padding:8px 12px;border-radius:4px;margin:10px 0}
+table{border-collapse:collapse;width:100%;font-size:.92rem}td,th{border:1px solid var(--line);padding:6px 8px;text-align:left}th{background:#eadfc2}
+label{display:block;font-size:.85rem;color:var(--mut);margin-top:8px}input,select{width:100%;font:inherit;padding:9px;border:1px solid var(--line);border-radius:6px;background:#fff;color:var(--ink)}
+.row{display:grid;grid-template-columns:2fr 2fr 1fr;gap:8px}@media(max-width:560px){.row{grid-template-columns:1fr}}
+.btn{font:inherit;background:var(--acc);color:#fff;border:0;border-radius:6px;padding:10px 16px;cursor:pointer;margin-top:12px}.btn.g{background:#6b6455}
+.q{padding:10px 0;border-bottom:1px dashed var(--line)}.q label{display:flex;gap:8px;color:var(--ink);font-size:1rem;margin:4px 0;align-items:flex-start;cursor:pointer}.q input{width:auto;margin-top:5px}
+.paste{background:#fff176;outline:3px dashed #d32f2f;padding:8px;border-radius:6px}.mut{color:var(--mut);font-size:.85rem}
+#wm{position:fixed;inset:0;pointer-events:none;z-index:5;display:flex;align-items:center;justify-content:center;font:700 clamp(28px,7vw,64px) Georgia,serif;color:rgba(120,80,30,.09);transform:rotate(-25deg);white-space:nowrap}
+img.res{max-width:100%;border:1px solid var(--line);border-radius:6px}
+</style></head><body><div id="wm">RAYMOND D. ENTAL</div>
+<header><h1>⚙ Machine Shop Technology — Module IX &amp; X</h1><p>Parallel Turning · Drilling, Boring, Reaming &amp; Tapping</p></header>
+<nav id="nav"></nav><main>
+
+<section class="pane on" id="p-l9"><div class="card"><h2>IX. Parallel Turning</h2>
+<p>Parallel turning reduces a rotating workpiece to a <b>cylinder of uniform diameter</b> by feeding the tool parallel to the lathe axis (carriage/saddle feed).</p>
+<h3>9.1 Setting up a cutting tool</h3>
+<ul><li>Clamp the tool in the tool post with the <b>shortest possible overhang</b> for rigidity — less chatter.</li>
+<li>Set the tool tip at <b>center height</b> (check against a tailstock dead center or a steel rule on the workpiece face).</li>
+<li>Tool <b>above center</b>: clearance is lost and the heel rubs. Tool <b>below center</b>: the work rides over the tool and leaves a <i>pip</i> when facing.</li>
+<li>Set the tool square to the work (slight lead angle) so it cuts on the side-cutting edge.</li></ul>
+<h3>9.2 Rough turning and finish turning</h3>
+<table><tr><th></th><th>Rough turning</th><th>Finish turning</th></tr><tr><td>Purpose</td><td>Remove most material fast</td><td>Reach exact size &amp; surface finish</td></tr><tr><td>Depth of cut</td><td>Deep (1–3 mm)</td><td>Light (0.1–0.5 mm)</td></tr><tr><td>Feed</td><td>Coarse</td><td>Fine</td></tr><tr><td>Speed</td><td>Moderate</td><td>Higher</td></tr><tr><td>Allowance left</td><td>≈0.25–0.5 mm</td><td>—</td></tr></table>
+<div class="tip">Cross-slide dial: a depth of cut <b>d</b> reduces the diameter by <b>2d</b>.</div>
+<h3>9.3 Kinds of shoulder</h3>
+<ul><li><b>Square shoulder</b> — 90° to the axis, made with the side-cutting edge.</li><li><b>Filleted shoulder</b> — corner radius for strength.</li><li><b>Chamfered (angled) shoulder</b> — beveled, commonly 45°.</li><li><b>Undercut (recessed) shoulder</b> — relief groove so mating parts seat fully.</li></ul>
+<p><a href="https://www.youtube.com/results?search_query=lathe+parallel+turning+setting+up+cutting+tool+rough+and+finish+turning+shoulders" target="_blank" rel="noopener">▶ Related video: Parallel turning, tool setup &amp; shoulders (YouTube)</a></p></div></section>
+
+<section class="pane" id="p-l10"><div class="card"><h2>X. Drilling, Boring, Reaming and Tapping</h2>
+<h3>10.1 Spot and drill work in a chuck</h3>
+<ul><li>Face the end, then <b>spot (center) drill</b> so the twist drill will not wander.</li><li>Hold the drill in a drill chuck or taper shank in the <b>tailstock</b>; the work is gripped in the 3-jaw chuck.</li><li>General-purpose drill point angle: <b>118°</b>. Larger drills → <b>lower rpm</b>.</li><li><b>Peck</b> the drill (withdraw) to clear chips and let coolant in.</li></ul>
+<h3>10.2 Boring, reaming and tapping</h3>
+<ul><li><b>Boring</b>: enlarging/truing a drilled hole with a single-point boring bar — keep the bar overhang short.</li><li><b>Reaming</b>: finishes a hole to precise size and smooth finish; leave ≈0.1–0.25 mm, run at ~½ drilling speed, never reverse while cutting.</li><li><b>Tapping</b>: cuts internal threads. Tap drill ≈ major diameter − pitch (M10×1.5 → 8.5 mm). Sequence: taper, second, plug (bottoming) tap. Use low speed and cutting fluid.</li></ul>
+<p><a href="https://www.youtube.com/results?search_query=lathe+drilling+boring+reaming+tapping+tutorial" target="_blank" rel="noopener">▶ Related video: Drilling, boring, reaming &amp; tapping on the lathe (YouTube)</a></p></div></section>
+
+<section class="pane" id="p-q"><div class="card"><h2 id="qt">Quiz</h2>
+<div id="info"><div class="row"><div><label>Last name</label><input id="ln" autocomplete="off"></div><div><label>First name</label><input id="fn" autocomplete="off"></div><div><label>M.I.</label><input id="mi" maxlength="2" autocomplete="off"></div></div>
+<div class="row" style="grid-template-columns:1fr 2fr"><div><label>Section ▾</label><select id="sec"><option>1A</option></select></div><div><label>Valid email</label><input id="em" type="email" autocomplete="off"></div></div>
+<button class="btn" id="go">Start quiz</button><p class="mut">10 unique items per student. Switching tabs closes and submits the quiz automatically. Every item must be answered before submitting (you may skip and return).</p></div>
+<div id="quiz" style="display:none"><div id="qs"></div><button class="btn" id="sub">Submit</button> <button class="btn g" id="rt" style="display:none">Back</button></div>
+<div id="out" style="display:none"></div></div></section>
+
+<section class="pane" id="p-a"><div class="card"><h2>Admin</h2>
+<div id="lg"><label>Password</label><input id="pw" type="password"><button class="btn" id="li">Log in</button></div>
+<div id="ad" style="display:none"><p><b>Google Sheet link (Apps Script Web App URL)</b></p>
+<div class="paste">▼ PASTE YOUR APPS SCRIPT WEB APP URL HERE (…/exec) ▼<input id="su" placeholder="https://script.google.com/macros/s/…/exec"></div>
+<button class="btn" id="ss">Save URL</button> <button class="btn g" id="cl">Clear local records</button>
+<h3>Attempts on this device</h3><div id="rec" style="overflow-x:auto"></div></div></div></section>
+</main>
+<script>
+// ▼▼▼ PASTE YOUR GOOGLE APPS SCRIPT WEB APP URL BETWEEN THE QUOTES (or paste it in the Admin tab) ▼▼▼
+const SHEET_URL = "https://script.google.com/macros/s/AKfycbzqTUS0dcIM1WIggj0eNpzs9zoTI8fwtmSopfb1z6kwJJMn1si_dLKAea7qRh9qcXqm/exec";
+// ▲▲▲ ───────────────────────────────────────────────────────────────────────────────────────── ▲▲▲
+const ADMIN_PW="RDDE_2026",$=i=>document.getElementById(i);
+const BANK={IX:{t:"IX. Parallel Turning",q:[
+["Where should the cutting tool tip be set for parallel turning?","At the center height of the workpiece","Above the center","Below the center","At the tool post edge"],
+["Tool overhang from the tool post should be…","As short as possible","As long as possible","Equal to the work diameter","Any length"],
+["Rough turning is done mainly to…","Remove most of the material quickly","Get the final surface finish","Cut threads","Drill holes"],
+["Finish turning normally uses…","Light cut and fine feed","Deep cut and coarse feed","No coolant and slow rpm","Maximum depth of cut"],
+["A typical allowance left for finish turning is about…","0.25–0.5 mm","5–10 mm","0 mm","2–3 cm"],
+["A tool set above center will…","Lose clearance and rub","Leave a pip when facing","Cut more smoothly","Cut a thread"],
+["A tool set below center when facing leaves…","A small pip at the center","A mirror finish","A taper","A knurl"],
+["Parallel turning produces…","A cylinder of uniform diameter","A tapered cone","An internal thread","A flat face only"],
+["Which check sets tool height accurately?","Match the tip to the tailstock dead center","Eyeball only","Use a vernier on the chuck","Measure the bed length"],
+["A square shoulder is…","90° to the work axis","Rounded at the corner","Angled at 45°","A relief groove"],
+["A filleted shoulder has…","A radius in the corner for strength","A 45° bevel","No corner","A thread"],
+["A chamfered shoulder is commonly…","Beveled at 45°","Perfectly square","Hollow","Knurled"],
+["An undercut shoulder is made so that…","Mating parts seat fully against the shoulder","The part is lighter","The thread is longer","The chuck grips better"],
+["A 0.5 mm depth of cut on the cross-slide reduces the diameter by…","1.0 mm","0.5 mm","0.25 mm","2.0 mm"],
+["The side-cutting edge of the tool forms which feature?","The shoulder face","The bore","The thread crest","The center hole"]]},
+X:{t:"X. Drilling, Boring, Reaming & Tapping",q:[
+["A spot (center) drill is used to…","Start the hole accurately so the drill won't wander","Finish the hole to size","Cut threads","Enlarge a bore"],
+["A twist drill in lathe work is usually held in…","A drill chuck in the tailstock","The tool post","The cross-slide","The headstock spindle nose cap"],
+["General-purpose drill point angle is…","118°","60°","90° only for steel","180°"],
+["For larger drill diameters, rpm should be…","Lower","Higher","Unchanged","Maximum"],
+["Pecking while drilling helps to…","Clear chips and bring in coolant","Make the hole larger","Dull the drill","Reduce feed to zero"],
+["Boring is…","Enlarging a drilled hole with a single-point tool","Cutting external threads","Making a center hole","Knurling"],
+["A boring bar should have…","Short overhang for rigidity","Long overhang for reach","A blunt tip","No clearance"],
+["Reaming is done to…","Finish a hole to precise size and smooth finish","Remove most material","Cut internal threads","Start a hole"],
+["A typical reaming allowance is about…","0.1–0.25 mm","3–5 mm","0 mm","1 cm"],
+["Reaming speed compared with drilling speed is about…","Half","Double","The same","Four times"],
+["A reamer should be turned…","Only in the cutting direction","Backward while cutting","Both ways","Never rotated"],
+["Tap drill size is approximately…","Major diameter minus pitch","Major diameter plus pitch","Twice the pitch","Equal to the major diameter"],
+["The correct order of taps is…","Taper, second, plug (bottoming)","Plug, taper, second","Bottoming, plug, taper","Any order"],
+["Tapping on a lathe should be done at…","Low speed with cutting fluid","High speed, dry","Maximum rpm","Any speed, no fluid"],
+["Tap drill for M10 × 1.5 is…","8.5 mm","10 mm","9.5 mm","7 mm"]]}};
+let cur=null,Q=[],A=[],active=false,topic="IX";
+const hash=s=>{let h=1779033703;for(let i=0;i<s.length;i++){h=Math.imul(h^s.charCodeAt(i),3432918353);h=h<<13|h>>>19}return h>>>0};
+const rng=a=>()=>{a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296};
+const shuf=(a,r)=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(r()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+const ls={get(k,d){try{return JSON.parse(localStorage.getItem(k))??d}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+const ts=()=>new Date().toLocaleString("en-PH",{timeZone:"Asia/Manila",dateStyle:"medium",timeStyle:"medium"})+" (PHT)";
+const tabs=[["l9","Lecture IX"],["l10","Lecture X"],["qIX","Quiz IX"],["qX","Quiz X"],["a","Admin"]];
+$("nav").innerHTML=tabs.map(t=>`<button data-t="${t[0]}">${t[1]}</button>`).join("");
+function show(k){if(active)return;document.querySelectorAll(".pane").forEach(p=>p.classList.remove("on"));
+ const id=k.startsWith("q")?"q":k;$("p-"+id).classList.add("on");document.querySelectorAll("nav button").forEach(b=>b.classList.toggle("on",b.dataset.t==k));
+ if(id=="q"){topic=k.slice(1);$("qt").textContent="Quiz — "+BANK[topic].t;$("info").style.display="";$("quiz").style.display="none";$("out").style.display="none"}}
+$("nav").onclick=e=>{if(e.target.dataset.t)show(e.target.dataset.t)};show("l9");
+$("go").onclick=()=>{const ln=$("ln").value.trim(),fn=$("fn").value.trim(),mi=$("mi").value.trim().replace(/\.$/,""),em=$("em").value.trim();
+ if(!ln||!fn||!mi)return alert("Enter last name, first name and middle initial.");
+ if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(em))return alert("Enter a valid email address.");
+ const key="att:"+em.toLowerCase()+":"+topic,n=(ls.get(key,0))+1;ls.set(key,n);
+ const r=rng(hash([ln,fn,mi,em,topic,n].join("|").toLowerCase()));
+ Q=shuf(BANK[topic].q,r).slice(0,10).map(q=>({t:q[0],c:q[1],o:shuf(q.slice(1),r)}));A=Array(10).fill(null);
+ cur={name:`${ln.toUpperCase()}, ${fn} ${mi}.`,sec:$("sec").value,em,n,topic};active=true;
+ $("qs").innerHTML=Q.map((q,i)=>`<div class="q"><b>${i+1}. ${q.t}</b>${q.o.map((o,j)=>`<label><input type="radio" name="q${i}" value="${j}"><span>${String.fromCharCode(65+j)}. ${o}</span></label>`).join("")}</div>`).join("");
+ $("info").style.display="none";$("quiz").style.display="";$("sub").style.display="";};
+$("qs").onchange=e=>{A[+e.target.name.slice(1)]=+e.target.value};
+$("sub").onclick=()=>{const m=A.map((a,i)=>a===null?i+1:0).filter(Boolean);if(m.length)return alert("Please answer item(s): "+m.join(", "));finish("Submitted")};
+document.addEventListener("visibilitychange",()=>{if(document.hidden&&active)finish("Auto-closed: tab switched")});
+function finish(status){if(!active)return;active=false;const score=Q.reduce((s,q,i)=>s+(A[i]!==null&&q.o[A[i]]===q.c?1:0),0),time=ts();
+ const R={...cur,score,status,time,key:Q.map((q,i)=>({q:q.t,a:A[i]===null?"(no answer)":q.o[A[i]],c:q.c}))};
+ const L=ls.get("rec",[]);L.push({name:R.name,sec:R.sec,em:R.em,topic:R.topic,n:R.n,score,status,time});ls.set("rec",L);
+ $("quiz").style.display="none";$("out").style.display="";$("out").innerHTML=`<h3>${status} — Score ${score}/10 · Attempt #${R.n}</h3><p class="mut">${time}</p><p id="st" class="mut">Recording to Google Sheet…</p><div id="im"></div>`;
+ send(R);card(R)}
+async function send(R){const u=SHEET_URL||ls.get("sheetUrl","");if(!u){$("st").textContent="⚠ No Google Sheet link set yet (Admin tab).";return}
+ try{await fetch(u,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain"},body:JSON.stringify({timestamp:R.time,name:R.name,section:R.sec,email:R.em,topic:BANK[R.topic].t,attempt:R.n,score:R.score+"/10",status:R.status,answerKey:R.key.map((k,i)=>`${i+1}. ${k.a} | key: ${k.c}`).join(" || ")})});$("st").textContent="✔ Sent to the Student Score Recorder sheet."}catch(e){$("st").textContent="⚠ Could not reach the sheet."}}
+function wrap(c,t,x,y,w,lh){const ws=t.split(" ");let l="";for(const s of ws){if(c.measureText(l+s).width>w){c.fillText(l,x,y);y+=lh;l=""}l+=s+" "}c.fillText(l,x,y);return y+lh}
+async function card(R){const cv=document.createElement("canvas"),W=1000;cv.width=W;cv.height=420+R.key.length*118;const c=cv.getContext("2d");
+ c.fillStyle="#f6efdc";c.fillRect(0,0,W,cv.height);c.fillStyle="#3a3226";c.fillRect(0,0,W,90);c.fillStyle="#f6efdc";c.font="bold 32px Georgia";c.fillText("Machine Shop Technology — Quiz Result",30,56);
+ c.fillStyle="#2b2a26";c.font="24px Georgia";let y=140;[`Name: ${R.name}   Section: ${R.sec}`,`Email: ${R.em}`,`Topic: ${BANK[R.topic].t}`,`Attempt #: ${R.n}    Status: ${R.status}`,`Time stamp: ${R.time}`].forEach(t=>{c.fillText(t,30,y);y+=36});
+ c.fillStyle="#b4531f";c.font="bold 44px Georgia";c.fillText(`SCORE: ${R.score} / 10`,30,y+30);y+=80;c.fillStyle="#2b2a26";c.font="bold 24px Georgia";c.fillText("Answer key",30,y);y+=32;
+ R.key.forEach((k,i)=>{const ok=k.a===k.c;c.font="bold 19px Georgia";c.fillStyle="#2b2a26";let yy=wrap(c,`${i+1}. ${k.q}`,30,y,940,24);c.font="18px Georgia";c.fillStyle=ok?"#2e7d32":"#b3261e";c.fillText(`${ok?"✔":"✘"} Your answer: ${k.a}`.slice(0,95),50,yy);c.fillStyle="#2b2a26";c.fillText(`Key: ${k.c}`.slice(0,95),50,yy+24);y+=118});
+ c.save();c.translate(W/2,cv.height/2);c.rotate(-.45);c.fillStyle="rgba(120,80,30,.12)";c.font="bold 90px Georgia";c.textAlign="center";c.fillText("RAYMOND D. ENTAL",0,0);c.restore();
+ c.fillStyle="#6b6455";c.font="16px Georgia";c.fillText("RAYMOND D. ENTAL",W-230,cv.height-20);
+ const blob=await new Promise(r=>cv.toBlob(r,"image/png")),url=URL.createObjectURL(blob),fname=`Result_${R.name.replace(/[^\w]+/g,"_")}_${R.topic}_attempt${R.n}.png`;
+ $("im").innerHTML=`<img class="res" src="${url}" alt="Result"><p><button class="btn" id="dl">⬇ Download result picture</button></p>`;
+ const save=async()=>{try{const d=await claude.use("downloads");if(d){await d.save({filename:fname,data:blob});return}}catch(e){}const a=document.createElement("a");a.href=url;a.download=fname;a.click()};
+ $("dl").onclick=save;save()}
+$("li").onclick=()=>{if($("pw").value===ADMIN_PW){$("lg").style.display="none";$("ad").style.display="";$("su").value=SHEET_URL||ls.get("sheetUrl","");rec()}else alert("Wrong password.")};
+$("ss").onclick=()=>{ls.set("sheetUrl",$("su").value.trim());alert("Saved on this device.")};
+$("cl").onclick=()=>{if(confirm("Clear local records?")){ls.set("rec",[]);rec()}};
+function rec(){const L=ls.get("rec",[]);$("rec").innerHTML=L.length?`<table><tr><th>Time</th><th>Name</th><th>Sec</th><th>Topic</th><th>Att</th><th>Score</th><th>Status</th></tr>${L.map(r=>`<tr><td>${r.time}</td><td>${r.name}</td><td>${r.sec}</td><td>${r.topic}</td><td>${r.n}</td><td>${r.score}/10</td><td>${r.status}</td></tr>`).join("")}</table>`:"<p class='mut'>No attempts yet on this device.</p>"}
+</script></body></html>
